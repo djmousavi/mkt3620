@@ -1,12 +1,55 @@
-/* style.css */
+/* Reset default page spacing */
 body {
-    background-color: deepskyblue; 
+    margin: 0;
+    font-family: sans-serif;
+    background-color: deepskyblue;
+    min-height: 100vh;
+    
+    /* Stack elements vertically: Nav bar at top, content container below */
     display: flex;
-    justify-content: center; 
-    align-items: center;     
-    min-height: 100vh;       
-    margin: 0;               
-    font-family: sans-serif; 
+    flex-direction: column; 
+}
+
+/* --- NAVIGATION BAR --- */
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style-type: none; /* Removes bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centers the tabs horizontally */
+    flex-wrap: wrap;        /* Prevents breaking on mobile layouts */
+    gap: 15px;              /* Spacing between tabs */
+}
+
+.navbar a {
+    text-decoration: none;  /* Removes underline */
+    color: #333;            /* Dark text color */
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+/* Highlight tab when user hovers over it */
+.navbar a:hover {
+    background-color: #f0f0f0;
+    color: deepskyblue;
+}
+
+/* --- MAIN CONTENT CONTAINER --- */
+.page-container {
+    flex-grow: 1;           /* Takes up the remaining vertical space */
+    display: flex;
+    justify-content: center; /* Centers content box horizontally */
+    align-items: center;     /* Centers content box vertically */
+    padding: 20px;
 }
 
 .content-box {
@@ -15,4 +58,6 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    max-width: 500px;
+    width: 100%;
 }
