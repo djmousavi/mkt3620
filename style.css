@@ -61,3 +61,20 @@ body {
     max-width: 500px;
     width: 100%;
 }
+
+/* Wrapper to align top text, box, and bottom text vertically */
+.page-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Spacing between outside text and the box */
+    width: 100%;
+}
+
+/* Styling for text outside the main box */
+.outside-text {
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
