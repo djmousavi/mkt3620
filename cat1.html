@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Website Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category 1</title>
     <link rel="stylesheet" href="style.css">
     <script src="header.js" defer></script>
 </head>
@@ -10,11 +11,24 @@
 
     <!-- Main Section Holding Centered Box -->
     <main class="page-container">
-        <div class="content-box">
-            <h1>Welcome to Cat1 page</h1>
-            <p>You can click on the tabs above to navigate between categories         kjh      hghj               hghgj 
-                mnnmm.</p>
+        
+        <!-- Outer wrapper to hold everything stacked vertically -->
+        <div class="page-content-wrapper">
+            
+            <!-- Text ABOVE the box -->
+            <p class="outside-text">This text is placed outside and above the box.</p>
+
+            <!-- Main Content Box -->
+            <div class="content-box">
+                <h1>Welcome to Category 1</h1>
+                <p>You can click on the tabs above to navigate between categories.</p>
+            </div>
+
+            <!-- Text BELOW the box -->
+            <p class="outside-text">This text is placed outside and below the box.</p>
+
         </div>
+
     </main>
 
 </body>
