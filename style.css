@@ -29,7 +29,7 @@ body {
 
 .header-top {
     display: flex;
-    border-bottom: 1px solid #000000;
+    border-bottom: 2px solid #000000;
 }
 
 .logo-area {
@@ -50,8 +50,9 @@ body {
     text-align: center;
 }
 
-/* Primary Navigation bar inside constrained header */
+/* Primary Navigation Bar - Deep Slate Palette */
 .primary-nav {
+    background-color: #2C3639; /* Deep Warm Slate */
     border-bottom: 1px solid #000000;
 }
 
@@ -59,13 +60,27 @@ body {
     display: flex;
     list-style: none;
     justify-content: space-around;
-    padding: 10px 0;
+    padding: 0;
+}
+
+.primary-nav li {
+    flex: 1;
+    text-align: center;
 }
 
 .primary-nav a {
+    display: block;
+    padding: 12px 0;
     text-decoration: none;
-    color: #000000;
+    color: #FFFFFF; /* High contrast text */
     font-weight: bold;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Hover Accent */
+.primary-nav a:hover {
+    background-color: #3F4E4F; /* Lighter slate accent on hover */
+    color: #E2E8F0;
 }
 
 /* 4. Three-Column Main Layout (Left Nav | Content | Sticky Sidebar) */
