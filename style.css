@@ -142,25 +142,28 @@ body {
 }
 
 /* 6. Logo */
+/* Logo Container & Scaling Constraints */
 .logo-area {
     width: 30%;
+    height: 100px; /* Sets a fixed height for the header top block */
     padding: 10px;
     border-right: 1px solid #000000;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden; /* Prevents oversized images from breaking the container */
 }
 
 .logo-area a {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    text-align: center;
+    height: 100%;
 }
 
 .logo-img {
-    max-width: 100%;
-    height: auto;
-    max-height: 80px; /* Adjust this to control how tall the logo appears */
-    display: block;
-    margin: 0 auto;
+    width: 180px;  /* Set your desired exact fixed width */
+    height: 80px;  /* Set your desired exact fixed height */
+    object-fit: contain; /* Scales image proportionally to fit inside the box without stretching */
 }
