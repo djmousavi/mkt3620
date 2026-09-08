@@ -3,7 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
         <header class="site-header">
             <div class="header-top">
                 <div class="logo-area">
-                    <h1>Logo</h1>
+                    <a href="index.html">
+                        <img src="logo.webp">
+                    </a>
                 </div>
                 <div class="info-graphics">
                     <p>This area is for informational graphics which describe in images what your site is about</p>
@@ -24,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
         </header>
     `;
 
-    // Inserts the header at the top inside the container
     const pageContainer = document.querySelector(".page-container");
     if (pageContainer) {
         pageContainer.insertAdjacentHTML("afterbegin", headerHTML);
