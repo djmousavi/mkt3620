@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <h1>Logo</h1>
                 </div>
                 <div class="info-graphics">
-                    <p>Informational graphics describing what your site is about</p>
+                    <p>This area is for informational graphics which describe in images what your site is about</p>
                 </div>
             </div>
             <nav class="primary-nav navbar">
@@ -23,7 +23,12 @@ document.addEventListener("DOMContentLoaded", function () {
             </nav>
         </header>
     `;
-    
-    // Inserts the header at the top of the <body>
-    document.body.insertAdjacentHTML("afterbegin", headerHTML);
+
+    // Inserts the header at the top inside the container
+    const pageContainer = document.querySelector(".page-container");
+    if (pageContainer) {
+        pageContainer.insertAdjacentHTML("afterbegin", headerHTML);
+    } else {
+        document.body.insertAdjacentHTML("afterbegin", headerHTML);
+    }
 });
