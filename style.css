@@ -1,80 +1,136 @@
-/* Reset default page spacing */
-body {
-    margin: 0;
-    font-family: sans-serif;
-    background-color: deepskyblue;
-    min-height: 100vh;
-    
-    /* Stack elements vertically: Nav bar at top, content container below */
-    display: flex;
-    flex-direction: column; 
-}
-
-/* --- NAVIGATION BAR --- */
-.navbar {
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    padding: 10px 0;
-    width: 100%;
-}
-
-.navbar ul {
-    list-style-type: none; /* Removes bullet points */
+/* General Page Reset & Background Setup */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center; /* Centers the tabs horizontally */
-    flex-wrap: wrap;        /* Prevents breaking on mobile layouts */
-    gap: 15px;              /* Spacing between tabs */
 }
 
-.navbar a {
-    text-decoration: none;  /* Removes underline */
-    color: #333;            /* Dark text color */
-    font-weight: bold;
-    padding: 8px 16px;
-    border-radius: 5px;
-    transition: background-color 0.2s;
+body {
+    background-color: #8A9A86; /* Sage Green background for surrounding body area */
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px 0;
 }
 
-/* Highlight tab when user hovers over it */
-.navbar a:hover {
-    background-color: #f0f0f0;
-    color: deepskyblue;
-}
-
-/* --- MAIN CONTENT CONTAINER --- */
+/* Central Wireframe Container */
 .page-container {
-    flex-grow: 1;           /* Takes up the remaining vertical space */
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff; /* White interior as shown in the layout */
+    border: 2px solid #000;
+}
+
+/* Header Styling */
+.site-header {
+    border-bottom: 2px solid #000;
+}
+
+.header-top {
     display: flex;
-    justify-content: center; /* Centers content box horizontally */
-    align-items: center;     /* Centers content box vertically */
+    border-bottom: 1px solid #000;
+}
+
+.logo-area {
+    width: 25%;
     padding: 20px;
-}
-
-.content-box {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 500px;
-    width: 100%;
-}
-
-/* Wrapper to align top text, box, and bottom text vertically */
-.page-content-wrapper {
+    border-right: 1px solid #000;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 15px; /* Spacing between outside text and the box */
-    width: 100%;
+    justify-content: center;
 }
 
-/* Styling for text outside the main box */
-.outside-text {
-    color: white;
-    font-weight: bold;
-    margin: 0;
+.info-graphics {
+    width: 75%;
+    padding: 20px;
     text-align: center;
+    background-color: #f9f9f9;
+}
+
+.primary-nav {
+    border-bottom: 1px solid #000;
+    background-color: #f2f2f2;
+}
+
+.primary-nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 8px 0;
+}
+
+.primary-nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Grid Layout for Main Content & Sidebars */
+.main-wrapper {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px; /* Left Sidebar | Main Content | Right Sidebar */
+    min-height: 500px;
+}
+
+/* Left Sidebar */
+.left-sidebar {
+    border-right: 1px solid #000;
+    padding: 15px;
+    background-color: #fafafa;
+}
+
+.left-sidebar ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.left-sidebar li {
+    margin-bottom: 8px;
+}
+
+/* Center Content */
+.main-content {
+    padding: 15px;
+}
+
+.hero-image {
+    width: 80%;
+    height: 150px;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+}
+
+.text-content h2 {
+    margin-bottom: 10px;
+}
+
+/* Sticky Right Sidebar */
+.right-sidebar {
+    border-left: 1px solid #000;
+    padding: 15px;
+    background-color: #fafafa;
+    position: sticky;
+    top: 0;
+    align-self: start;
+}
+
+.right-sidebar ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.right-sidebar li {
+    margin-bottom: 6px;
+}
+
+/* Footer Styling */
+.site-footer {
+    border-top: 2px solid #000;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9em;
+    background-color: #f2f2f2;
 }
