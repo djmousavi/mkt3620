@@ -2,19 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Website Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Site Title</title>
     <link rel="stylesheet" href="style.css">
-    <script src="header.js" defer></script>
+    <script src="nav.js" defer></script>
 </head>
 <body>
 
-    <!-- Main Section Holding Centered Box -->
-    <main class="page-container">
-        <div class="content-box">
-            <h1>Welcome to the Homepage</h1>
-            <p>You can click on the tabs above to navigate between categories.</p>
+    <!-- Container matching wireframe -->
+    <div class="page-container">
+
+        <!-- The JavaScript dynamically inserts the <header> here -->
+
+        <!-- Main Wrapper for Sidebars and Main Content -->
+        <div class="main-wrapper">
+            
+            <!-- Left Sidebar Navigation -->
+            <aside class="left-sidebar">
+                <h3>Primary Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cat1.html">Cat1</a></li>
+                    <li><a href="cat2.html">Cat2</a></li>
+                    <li><a href="cat3.html">Cat3</a></li>
+                    <li><a href="cat4.html">Cat4</a></li>
+                </ul>
+            </aside>
+
+            <!-- Center Content Column -->
+            <main class="main-content">
+                <div class="hero-image">
+                    <h2>Hero image at top</h2>
+                </div>
+                
+                <section class="text-content">
+                    <h2>Main content area</h2>
+                    <p>
+                        This area HAS to contain HTML text and images (i.e. not image text). 
+                        Text should be around 400 words and contain 5-7% keywords...
+                    </p>
+                </section>
+            </main>
+
+            <!-- Right Sidebar (Sticky Content) -->
+            <aside class="right-sidebar">
+                <h3>Sticky Content</h3>
+                <ul>
+                    <li>News items</li>
+                    <li>Adverts</li>
+                    <li>Offers</li>
+                    <li>General site info</li>
+                    <li>Social Networking icons</li>
+                </ul>
+            </aside>
+
         </div>
-    </main>
+
+        <!-- Footer Area -->
+        <footer class="site-footer">
+            <p>Footer: Contains copyright info, current year, primary links, contact, privacy statement, webmaster email address.</p>
+        </footer>
+
+    </div>
 
 </body>
 </html>
