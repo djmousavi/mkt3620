@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="page-container">
+        <!-- nav.js automatically inserts the site-header here -->
+
+        <div class="main-wrapper">
+            <!-- Left Navigation Sidebar -->
+            <aside class="left-sidebar">
+                <h3>Secondary Nav</h3>
+                <ul>
+                    <li><a href="#">Subcategory 1</a></li>
+                    <li><a href="#">Subcategory 2</a></li>
+                    <li><a href="#">Subcategory 3</a></li>
+                </ul>
+            </aside>
+
+            <!-- Center Main Content with Embedded Google Form -->
+            <main class="main-content">
+                <article class="text-content">
+                    <h2>Contact Us</h2>
+                    <p>Please fill out the form below to get in touch with us.</p>
+                    
+                    <div class="form-wrapper" style="margin-top: 20px; width: 100%;">
+                        <iframe 
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSd8lphztKsgTFLD7CHCEYQwwvXlkyjpkmOL-uns2Wgj1RL1Mw/viewform?embedded=true" 
+                            width="100%" 
+                            height="600" 
+                            frameborder="0" 
+                            marginheight="0" 
+                            marginwidth="0">
+                            Loading…
+                        </iframe>
+                    </div>
+                </article>
+            </main>
+
+            <!-- Sticky Right Sidebar -->
+            <aside class="right-sidebar">
+                <h3>Sticky Content</h3>
+                <ul>
+                    <li>News Items</li>
+                    <li>Adverts</li>
+                    <li>Offers</li>
+                    <li>General Site Info</li>
+                    <li>Social Networking Icons</li>
+                </ul>
+            </aside>
+        </div>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <p>Footer: Contains copyright info, current year, primary links, contact, privacy statement, webmaster email address.</p>
+        </footer>
+    </div>
+
+    <!-- Script to load common navigation elements -->
+    <script src="nav.js"></script>
+</body>
+</html>
