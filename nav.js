@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="cat1.html">Cat1</a></li>
-                    <li><a href="cat2.html">Cat2</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
                     <li><a href="cat3.html">Cat3</a></li>
                     <li><a href="cat4.html">Cat4</a></li>
                     <li><a href="cat5.html">Cat5</a></li>
